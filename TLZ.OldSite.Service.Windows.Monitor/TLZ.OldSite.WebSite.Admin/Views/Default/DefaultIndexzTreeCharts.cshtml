@@ -1,0 +1,127 @@
+﻿@{
+    string zTreeSource = ViewData["dataBaseName"].ToString();
+}
+<div id="echars-main" class="echars-main">
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0" style="height:100%;overflow:auto; position: relative;">
+        @*Ping统计*@
+        <div id="ping-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var pinglineHour = echarts.init(document.getElementById('ping-line-Hour'));
+                $.ajax({
+                    async: true,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/SystenPingLineHour?SearchBiao=@zTreeSource",
+                    success: function (evt) {
+                        pinglineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+        </div>
+
+        @*Cpu统计*@
+        <div id="cpu-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var cpulineHour = echarts.init(document.getElementById('cpu-line-Hour'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/SystemCpuLineHour?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        cpulineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+
+        </div>
+
+        @*硬盘统计*@
+        <div id="hdd-bar" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var hddtbar = echarts.init(document.getElementById('hdd-bar'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/SystemHddBar?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        hddtbar.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+
+        </div>
+
+        @*内存统计*@
+        <div id="memories-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var memorieslineHour = echarts.init(document.getElementById('memories-line-Hour'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/SystemMemoriesHour?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        memorieslineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+        </div>
+
+        @*网络统计*@
+        <div id="internet-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var internetlineHour = echarts.init(document.getElementById('internet-line-Hour'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/SystemInternetHour?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        internetlineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+        </div>
+
+        @*进程内存统计*@
+        <div id="process-memories-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var ProcessMemorieslineHour = echarts.init(document.getElementById('process-memories-line-Hour'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/ProcessMemoriesHour?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        ProcessMemorieslineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+        </div>
+
+        @*进程Cpt统计*@
+        <div id="process-cpu-line-Hour" class="zTree-Charts">
+            <script type="text/javascript">
+                // 基于准备好的dom，初始化echarts实例
+                var ProcesscpulineHour = echarts.init(document.getElementById('process-cpu-line-Hour'));
+                $.ajax({
+                    async: false,
+                    type: "GET",
+                    cache: false,
+                    url: "/Default/ProcessCpuHour?SearchKu=@zTreeSource",
+                    success: function (evt) {
+                        ProcesscpulineHour.setOption(JSON.parse(evt));
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</div>

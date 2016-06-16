@@ -1,0 +1,10 @@
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService.exe
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\MongoDB.Bson.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\MongoDB.Driver.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.Helper.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.MongoDB.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.OldSite.DB.MongoDB.Model.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.OldSite.Service.Windows.Monitor.Host.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\TLZ.JSON.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\SharpPcap.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.Service.Windows.Monitor.SyetemPingService\bin\Debug\PacketDotNet.dll

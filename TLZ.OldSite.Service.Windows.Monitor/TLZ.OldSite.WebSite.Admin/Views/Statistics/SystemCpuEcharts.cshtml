@@ -1,0 +1,99 @@
+﻿<div id="echars" class="echars">
+    <div id="echars-head" class="echars-head">
+        <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:;"></a>
+            </div>
+            <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                    @*<li><a href="#bar">柱状图</a></li>*@
+                    <li><a href="#line-Minute">折线图-分</a></li>
+                    <li><a href="#line-Hour">折线图-时</a></li>
+                    <li><a href="#line-Day">折线图-天</a></li>
+                    <li><a href="#line-Week">折线图-周</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="echars-main" class="echars-main">
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" style="height:100%;overflow:auto; position: relative;">
+            @*<div id="bar" class="bar" style="height: 550px; width:1000px; overflow: hidden; position: relative; margin-left:auto; margin-right:auto;">
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChartbar = echarts.init(document.getElementById('bar'));
+                        $.ajax({
+                            async: true,
+                            type: "GET",
+                            cache: false,
+                            url: "/Statistics/SystemCpuBar" + $("#page_content").attr("search-filter"),
+                            success: function (evt) {
+                                myChartbar.setOption(JSON.parse(evt));
+                            }
+                        });
+                    </script>
+                </div>*@
+            <div id="line-Minute" class="line-Minute" style="height: 550px; width: 1000px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; ">
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChartlineMinute = echarts.init(document.getElementById('line-Minute'));
+                    $.ajax({
+                        async: true,
+                        type: "GET",
+                        cache: false,
+                        url: "/Statistics/SystemCpuLineMinute" + $("#page_content").attr("search-filter"),
+                        success: function (evt) {
+                            myChartlineMinute.setOption(JSON.parse(evt));
+                        }
+                    });
+                </script>
+            </div>
+            <div id="line-Hour" class="line-Hour" style="height: 550px; width: 1000px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; ">
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChartlineHour = echarts.init(document.getElementById('line-Hour'));
+                    $.ajax({
+                        async: true,
+                        type: "GET",
+                        cache: false,
+                        url: "/Statistics/SystemCpuLineHour" + $("#page_content").attr("search-filter"),
+                        success: function (evt) {
+                            myChartlineHour.setOption(JSON.parse(evt));
+                        }
+                    });
+                </script>
+            </div>
+            <div id="line-Day" class="line-Day" style="height: 550px; width: 1000px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; ">
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChartlineDay = echarts.init(document.getElementById('line-Day'));
+                    $.ajax({
+                        async: true,
+                        type: "GET",
+                        cache: false,
+                        url: "/Statistics/SystemCpuLineDay" + $("#page_content").attr("search-filter"),
+                        success: function (evt) {
+                            myChartlineDay.setOption(JSON.parse(evt));
+                        }
+                    });
+                </script>
+            </div>
+            <div id="line-Week" class="line-Week" style="height: 550px; width: 1000px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; ">
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChartlineWeek = echarts.init(document.getElementById('line-Week'));
+                    $.ajax({
+                        async: true,
+                        type: "GET",
+                        cache: false,
+                        url: "/Statistics/SystemCpuLineWeek" + $("#page_content").attr("search-filter"),
+                        success: function (evt) {
+                            myChartlineWeek.setOption(JSON.parse(evt));
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="echars-footer" class="echars-footer">
+    </div>
+</div>

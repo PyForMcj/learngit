@@ -1,0 +1,124 @@
+﻿@using TLZ.OldSite.WebSite.Admin;
+@using TLZ.OldSite.WebSite.Admin.Models;
+@model BaseSearchModel
+@{
+    string searchBiao = string.Empty;
+    string searchKu = string.Empty;
+    if (Model.SearchBiao != null && Model.SearchBiao.Count > 0)
+    {
+        searchBiao = string.Join(",", Model.SearchBiao.ToArray());
+    }
+    if (Model.SearchKu != null && Model.SearchKu.Count > 0)
+    {
+        searchKu = string.Join(",", Model.SearchKu.ToArray());
+    }
+}
+<script type="text/javascript">
+    $(document).on("click", "#SearchBiao", function () {
+        var $this = $(this);
+        $this.autocomplete({
+            source: "@searchBiao".split(",")
+        });
+    });
+    $(document).on("click", "#SearchKu", function () {
+        var $this = $(this);
+        $this.autocomplete({
+            source: "@searchKu".split(",")
+        });
+    });
+</script>
+<div id="search-div">
+    <div id="search-content">
+        <table id="search-table">
+            <tr>
+                <td><label class="search-label" for="SearchKeyWord">关键字：</label></td>
+                <td>
+                    <div class="search-group Search-Key-Word">
+                        <input type="text" id="SearchKeyWord" name="SearchKeyWord" value="" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="search-label" for="SearchDateTime">时间：</label></td>
+                <td>
+                    <div class="search-group Search-Date-Time">
+                        <input type="date" id="SearchDateTimeStart" name="SearchDateTimeStart" value="" />
+                        <span>至</span>
+                        <input type="date" id="SearchDateTimeEnd" name="SearchDateTimeEnd" value="" />
+                    </div>
+                </td>
+            </tr>
+            @if (Model.SearchBiao != null && Model.SearchBiao.Count > 0)
+            {
+                <tr>
+                    <td><label class="search-label" for="SearchBiao">表筛选：</label></td>
+                    <td>
+                        <div class="search-group Search-Biao">
+                            <input type="text" id="SearchBiao" name="SearchBiao" value="" />
+                        </div>
+                    </td>
+                </tr>
+            }
+            @if (Model.SearchKu != null && Model.SearchKu.Count > 0)
+            {
+                <tr>
+                    <td><label class="search-label" for="SearchKu">库筛选：</label></td>
+                    <td>
+                        <div class="search-group Search-Ku">
+                            <input type="text" id="SearchKu" name="SearchKu" value="" />
+                        </div>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="2">
+                    <div class="search-div-button">
+                        <button type="button" class="btn btn-default btn-block search-button" id="search-button">搜索</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    @*<ul id="search-select-ul" class="search-select-ul">
+            <li class="search-select-list">
+                <dl id="select1">
+                    <dt>1：</dt>
+                    <dd class="select-all search-selected"><a href="#">全部</a></dd>
+                    <dd><a href="#">1</a></dd>
+                    <dd><a href="#">2</a></dd>
+                    <dd><a href="#">3</a></dd>
+                    <dd><a href="#">4</a></dd>
+                    <dd><a href="#">5</a></dd>
+                    <dd><a href="#">6</a></dd>
+                    <dd><a href="#">7</a></dd>
+                </dl>
+            </li>
+            <li class="search-select-list">
+                <dl id="select2">
+                    <dt>2：</dt>
+                    <dd class="select-all search-selected"><a href="#">全部</a></dd>
+                    <dd><a href="#">1</a></dd>
+                    <dd><a href="#">2</a></dd>
+                    <dd><a href="#">3</a></dd>
+                    <dd><a href="#">4</a></dd>
+                    <dd><a href="#">5</a></dd>
+                </dl>
+            </li>
+            <li class="search-select-list">
+                <dl id="select3">
+                    <dt>3：</dt>
+                    <dd class="select-all search-selected"><a href="#">全部</a></dd>
+                    <dd><a href="#">1</a></dd>
+                    <dd><a href="#">2</a></dd>
+                    <dd><a href="#">3</a></dd>
+                    <dd><a href="#">4</a></dd>
+                </dl>
+            </li>
+            <li class="search-select-result">
+                <dl>
+                    <dt>已选条件：</dt>
+                    <dd class="search-select-no">暂时没有选择过滤条件</dd>
+                </dl>
+            </li>
+        </ul>*@
+</div>

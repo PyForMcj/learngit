@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "DefaultIndex";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Dictionary<string, string> searchAddress = ViewData["searchAddress"] as Dictionary<string, string>;
+    string zTreeSource = ViewData["zTreeSource"].ToString();
+}
+<script language="JavaScript">
+    var zTreeObj;
+    // zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
+    var setting = {
+        view: {
+            showIcon: showIconForTree,
+            fontCss: {
+                "color": "#777",
+                "font-family": "\"Helvetica Neue\",\"Hiragino Sans GB\",\"Microsoft YaHei\",\"\9ED1\4F53\",Arial,sans-serif",
+                "font-size": "14px"
+            },
+            showLine: false
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        callback: {
+            onClick: zTreeOnClick
+        }
+    };
+    function showIconForTree(treeId, treeNode) {
+        return !treeNode.isParent;
+    };
+
+    // zTree 的数据属性，深入使用请参考 API 文档（zTreeNode 节点数据详解）
+    debugger;
+    var zNodes = @Html.Raw(zTreeSource);
+
+    $(document).ready(function () {
+        zTreeObj = $.fn.zTree.init($("#ztree-charts"), setting, zNodes);
+    });
+
+    function zTreeOnClick(event, treeId, treeNode) {
+        debugger;
+        var requestUrl=$("#page_content:visible").attr("search-address");
+        $.ajax({
+            async:true,
+            type:"GET",
+            cache:false,
+            url:requestUrl+"?DataBaseName="+treeNode.name,
+            success:function(evt){
+                $("#echars:visible").html(evt);
+            }
+        });
+    };
+</script>
+<ol class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li class="active">综合查询</li>
+</ol>
+<div class="mian_content">
+    <div id="page_content" search-filter="" search-address="/@searchAddress["Controller"].ToString()/@searchAddress["Action"].ToString()">
+        <div id="ztree-container" class="ztree-container" style="width: 15%; height: 100%; float: left;">
+            <ul id="ztree-charts" class="ztree" style="margin-top: 0px; border-style: solid; border-width: 1px; border-color: gainsboro; background: whitesmoke; width: 100%; height: 100%; overflow-y: scroll; overflow-x: auto; "></ul>
+        </div>
+        <div id="echars" class="echars" style="width:85%; float:right;">
+        </div>
+    </div>
+</div>

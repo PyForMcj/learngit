@@ -1,0 +1,11 @@
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\TLZ.OldSite.DB.MongoDB.Model.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\TLZ.OldSite.DB.MongoDB.Model.pdb
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\MongoDB.Bson.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\MongoDB.Driver.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\PacketDotNet.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\SharpPcap.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\PacketDotNet.xml
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Debug\SharpPcap.xml
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\obj\Debug\TLZ.OldSite.DB.MongoDB.Model.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\obj\Debug\TLZ.OldSite.DB.MongoDB.Model.pdb
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\obj\Debug\TLZ.OldSite.DB.MongoDB.Model.csprojResolveAssemblyReference.cache

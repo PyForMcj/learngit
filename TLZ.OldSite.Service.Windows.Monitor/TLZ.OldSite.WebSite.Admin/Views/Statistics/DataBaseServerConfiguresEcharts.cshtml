@@ -1,0 +1,51 @@
+﻿<div id="echars" class="echars">
+    <div id="echars-head" class="echars-head">
+        <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:;"></a>
+            </div>
+            <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                    <li><a href="#bar">柱状图</a></li>
+                    @*<li><a href="#line">折线图</a></li>*@
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="echars-main" class="echars-main">
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" style="height:100%;overflow:auto; position: relative;">
+            <div id="bar" class="bar" style="height: 550px; width:1000px; overflow: hidden; position: relative; margin-left:auto; margin-right:auto;">
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChartbar = echarts.init(document.getElementById('bar'));
+                    $.ajax({
+                        async: true,
+                        type: "GET",
+                        cache: false,
+                        url: "/Statistics/DataBaseServerConfiguresBar" + $("#page_content").attr("search-filter"),
+                        success: function (evt) {
+                            myChartbar.setOption(JSON.parse(evt));
+                        }
+                    });
+                </script>
+            </div>
+            @*<div id="line" class="line" style="height: 550px; width: 1000px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; ">
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChartline = echarts.init(document.getElementById('line'));
+                        $.ajax({
+                            async: true,
+                            type: "GET",
+                            cache: false,
+                            url: "/Statistics/ActivityConfiguresLine"+ $("#page_content").attr("search-filter"),
+                            success: function (evt) {
+                                myChartline.setOption(JSON.parse(evt));
+                            }
+                        });
+                    </script>
+                </div>*@
+        </div>
+    </div>
+    <div id="echars-footer" class="echars-footer">
+    </div>
+</div>

@@ -1,0 +1,139 @@
+/* select */
+.search-select-ul {
+    padding: 5px 10px;
+    border: #ddd 1px solid;
+    border-radius: 4px; /*width:60%;*/ /*margin:5% auto;*/
+    font-size: 12px;
+}
+
+    .search-select-ul li {
+        list-style: none;
+        padding: 10px 0 5px 100px;
+    }
+
+    .search-select-ul .search-select-list {
+        border-bottom: #eee 1px dashed;
+    }
+
+    .search-select-ul dl {
+        zoom: 1;
+        position: relative;
+        line-height: 24px;
+    }
+
+        .search-select-ul dl:after {
+            content: " ";
+            display: block;
+            clear: both;
+            height: 0;
+            overflow: hidden;
+        }
+
+    .search-select-ul dt {
+        width: 100px;
+        margin-bottom: 5px;
+        position: absolute;
+        top: 0;
+        left: -100px;
+        text-align: right;
+        color: #666;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    .search-select-ul dd {
+        float: left;
+        display: inline;
+        margin: 0 0 5px 5px;
+        line-height: 24px;
+    }
+
+    .search-select-ul a {
+        display: inline-block;
+        white-space: nowrap;
+        height: 24px;
+        padding: 0 10px;
+        text-decoration: none;
+        color: #039;
+        border-radius: 2px;
+    }
+
+        .search-select-ul a:hover {
+            color: black;
+            background-color: #E7E7E7;
+            text-decoration: none;
+        }
+
+        .search-select-ul a:visited {
+            text-decoration: none;
+        }
+
+        .search-select-ul a:link {
+            text-decoration: none;
+        }
+
+        .search-select-ul a:active {
+            text-decoration: none;
+        }
+
+    .search-select-ul .search-selected a {
+        color: #fff;
+        background-color: darkgray;
+    }
+
+.search-select-result dt {
+    font-weight: bold;
+}
+
+.search-select-no {
+    color: #999;
+}
+
+.search-select-ul .search-select-result a {
+    padding-right: 20px;
+    background: darkgray url(../../Images/Search/close.gif) right 8px no-repeat;
+}
+
+    .search-select-ul .search-select-result a:hover {
+        background-position: right -15px;
+    }
+
+
+#search-div {
+    /*width: 100%;*/
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 5px;
+}
+
+#search-content {
+    width: 500px;
+    margin-left: 15%;
+}
+
+.search-group {
+    padding: 3px;
+}
+
+#search-table tr td {
+    margin-right:10px;
+}
+.search-label {
+    margin-right:15px;
+}
+.search-div-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+}
+#SearchBiao {
+    width:300px;
+}
+#SearchKu {
+    width:300px;
+}

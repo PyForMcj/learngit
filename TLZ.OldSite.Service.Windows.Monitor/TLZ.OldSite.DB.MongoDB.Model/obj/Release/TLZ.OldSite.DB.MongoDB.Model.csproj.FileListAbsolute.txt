@@ -1,0 +1,10 @@
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\TLZ.OldSite.DB.MongoDB.Model.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\TLZ.OldSite.DB.MongoDB.Model.pdb
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\MongoDB.Bson.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\MongoDB.Driver.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\PacketDotNet.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\SharpPcap.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\PacketDotNet.xml
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\bin\Release\SharpPcap.xml
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\obj\Release\TLZ.OldSite.DB.MongoDB.Model.dll
+E:\TidebuyCode\tfs\TLZ.OldSite.Service.Windows.Monitor\TLZ.OldSite.DB.MongoDB.Model\obj\Release\TLZ.OldSite.DB.MongoDB.Model.pdb

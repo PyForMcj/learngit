@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00DE0EBE-26B9-48CF-B58F-30E78547E635}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TLZ.Dlls</RootNamespace>
+    <AssemblyName>TLZ.Dlls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AntiXSSLibrary.dll" />
+    <Content Include="Antlr3.Runtime.dll" />
+    <Content Include="chasen233.exe" />
+    <Content Include="ChasenForCS.dll" />
+    <Content Include="Common.Logging.dll" />
+    <Content Include="DC.Web.HttpCompress.dll" />
+    <Content Include="DocX.dll" />
+    <Content Include="EcmaScript.NET.dll" />
+    <Content Include="GeoAPI.dll" />
+    <Content Include="HtmlAgilityPack.dll" />
+    <Content Include="Hubble.Analyzer.dll" />
+    <Content Include="Hubble.Core.dll" />
+    <Content Include="Hubble.Framework.dll" />
+    <Content Include="Hubble.SQLClient.dll" />
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Ivony.Core.dll" />
+    <Content Include="Ivony.Html.dll" />
+    <Content Include="Ivony.Html.Parser.dll" />
+    <Content Include="Ivony.Html.Parser.Regulars.dll" />
+    <Content Include="LibNMeCab.dll" />
+    <Content Include="log4net.dll" />
+    <Content Include="Lucene.Net.Contrib.Analyzers.dll" />
+    <Content Include="Lucene.Net.Contrib.Core.dll" />
+    <Content Include="Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="Lucene.Net.Contrib.Memory.dll" />
+    <Content Include="Lucene.Net.Contrib.Queries.dll" />
+    <Content Include="Lucene.Net.Contrib.Regex.dll" />
+    <Content Include="Lucene.Net.Contrib.Snowball.dll" />
+    <Content Include="Lucene.Net.Contrib.SpellChecker.dll" />
+    <Content Include="Lucene.Net.CWSharp.dll" />
+    <Content Include="Lucene.Net.dll" />
+    <Content Include="Magick.NET-AnyCPU.dll" />
+    <Content Include="Magick.NET-x64.dll" />
+    <Content Include="Md5Coder.dll" />
+    <Content Include="mecab-0.98.exe" />
+    <Content Include="MecabDotNet.dll" />
+    <Content Include="Microsoft.Web.Administration.dll" />
+    <Content Include="Microsoft.Web.Infrastructure.dll" />
+    <Content Include="MongoDB.Bson.dll" />
+    <Content Include="MongoDB.Driver.dll" />
+    <Content Include="MySql.Data.dll" />
+    <Content Include="MySql.Web.dll" />
+    <Content Include="NetTopologySuite.dll" />
+    <Content Include="NPOI.dll" />
+    <Content Include="NPOI.OOXML.dll" />
+    <Content Include="NVelocity.dll" />
+    <Content Include="PanGu.dll" />
+    <Content Include="PanGu.Lucene.Analyzer.dll" />
+    <Content Include="paypal_base.dll" />
+    <Content Include="PowerCollections.dll" />
+    <Content Include="Quartz.dll" />
+    <Content Include="RabbitMQ.Client.dll" />
+    <Content Include="RabbitMQ.ServiceModel.dll" />
+    <Content Include="ServiceStack.Common.dll" />
+    <Content Include="ServiceStack.Interfaces.dll" />
+    <Content Include="ServiceStack.Redis.dll" />
+    <Content Include="ServiceStack.Text.dll" />
+    <Content Include="Spatial4n.Core.dll" />
+    <Content Include="Spatial4n.Core.NTS.dll" />
+    <Content Include="System.Net.Http.dll" />
+    <Content Include="System.Net.Http.WebRequest.dll" />
+    <Content Include="System.Web.Mvc.dll" />
+    <Content Include="System.Web.Optimization.dll" />
+    <Content Include="System.Web.WebPages.Deployment.dll" />
+    <Content Include="System.Web.WebPages.dll" />
+    <Content Include="TaskScheduler.dll" />
+    <Content Include="TLZ.COM.Module.Search.Model.dll" />
+    <Content Include="TLZ.COM.Search.SiteGroup.WebSite.dll" />
+    <Content Include="TLZ.SharpZLib.dll" />
+    <Content Include="TransClient.dll" />
+    <Content Include="WebGrease.dll" />
+    <Content Include="Yahoo.Yui.Compressor.dll" />
+    <Content Include="Yamool.CWSharp.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

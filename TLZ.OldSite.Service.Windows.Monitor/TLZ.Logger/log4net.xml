@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net debug="true">
+  <appender name="FlatFile" type="log4net.Appender.RollingFileAppender,log4net">
+    <param name="File" value="logs/service.txt" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd'.txt'" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%-5level [%logger][%date] - %message %newline" />
+    </layout>
+  </appender>
+  <root>
+    <priority value="DEBUG" />
+    <appender-ref ref="FlatFile" />
+  </root>
+</log4net>
